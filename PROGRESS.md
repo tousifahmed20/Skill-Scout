@@ -1,7 +1,7 @@
 # Progress
 
 **Active stage:** — v1 (stages 01–09) complete. v2 = stages 10–11, not started (do not begin until this line says v2 has started).
-**Status:** all v1 code built + tested (90 tests, routes clean). Going-live gates deferred to the real environment: one owner seeding run (unlocks 06/08/09 accuracy) + creating the public repo and first scheduled build (unlocks 02/04 at-scale, 09 index download / $0 / skills-ref validate).
+**Status:** all v1 code built + tested (91 tests, routes clean). Going-live gates deferred to the real environment: one owner seeding run (unlocks 06/08/09 accuracy) + creating the public repo and first scheduled build (unlocks 02/04 at-scale, 09 index download / $0 / skills-ref validate).
 **Name:** 2026-10-12 — product renamed `agent-finder` → `skill-scout` ("Skill Scout") across the whole namespace (skill dir, `name:`, `~/.skill-scout/`, `SKILL_SCOUT_*`, release asset, install cmd, prose). Dev workspace folder on disk is still `agent-finder`; repo name is the owner's call at going-live. See `docs/decisions.md` D25.
 
 ## Log

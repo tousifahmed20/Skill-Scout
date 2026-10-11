@@ -2,7 +2,7 @@
 
 An agent skill that finds the best existing agent skills for a task. Describe the task in one sentence; get up to 3 picks with what each skill actually does, its limitations, claim checks, test status, sources, and the coding harnesses it works in.
 
-**Status:** v1 (stages 01–09) built and tested — 90 tests pass, routes clean. Going live (create the public repo, seed evaluations, run the first scheduled build) is pending; the exact steps are in `PROGRESS.md` under "Going live". v2 (stages 10–11: shared cache, external signals) is not started.
+**Status:** v1 (stages 01–09) built and tested — 91 tests pass, routes clean. Going live (create the public repo, seed evaluations, run the first scheduled build) is pending; the exact steps are in `PROGRESS.md` under "Going live". v2 (stages 10–11: shared cache, external signals) is not started.
 
 **Cost model:** v1 is free to run — no server, no recurring charges. GitHub Actions builds the skill index and GitHub Releases hosts it. Users' own models do all evaluation.
 
