@@ -1,0 +1,58 @@
+{
+  "candidate_id": "o/r@sock-puppets-clean",
+  "content_hash": "h",
+  "fetched_at": "2026-10-11T00:00:00+00:00",
+  "author": "owner",
+  "is_collection": false,
+  "first_seen": "2024-01-01",
+  "repo_meta": {
+    "stars": 0,
+    "forks": 0,
+    "archived": false,
+    "license": "mit",
+    "pushed_at": "2026-10-08T00:00:00+00:00",
+    "releases": 1,
+    "last_commit": "2026-10-08T00:00:00+00:00"
+  },
+  "author_account": {
+    "created_at": "2019-01-01",
+    "public_repos": 20,
+    "id": 1000000,
+    "type": "User"
+  },
+  "contributors": [
+    {
+      "login": "dev0",
+      "id": 1000000,
+      "type": "User",
+      "created_at": "2015-03-01",
+      "public_repos": 15
+    },
+    {
+      "login": "dev1",
+      "id": 1000001,
+      "type": "User",
+      "created_at": "2016-03-01",
+      "public_repos": 16
+    },
+    {
+      "login": "dev2",
+      "id": 1000002,
+      "type": "User",
+      "created_at": "2017-03-01",
+      "public_repos": 17
+    },
+    {
+      "login": "dev3",
+      "id": 1000003,
+      "type": "User",
+      "created_at": "2018-03-01",
+      "public_repos": 18
+    }
+  ],
+  "commits": [],
+  "issues": [],
+  "stargazers": [],
+  "forks": [],
+  "scope": {}
+}

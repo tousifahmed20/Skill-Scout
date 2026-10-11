@@ -1,0 +1,46 @@
+{
+  "candidate_id": "o/r@self-filed-issues-clean",
+  "content_hash": "h",
+  "fetched_at": "2026-10-11T00:00:00+00:00",
+  "author": "owner",
+  "is_collection": false,
+  "first_seen": "2024-01-01",
+  "repo_meta": {
+    "stars": 0,
+    "forks": 0,
+    "archived": false,
+    "license": "mit",
+    "pushed_at": "2026-10-08T00:00:00+00:00",
+    "releases": 1,
+    "last_commit": "2026-10-08T00:00:00+00:00"
+  },
+  "author_account": {
+    "created_at": "2019-01-01",
+    "public_repos": 20,
+    "id": 1000000,
+    "type": "User"
+  },
+  "contributors": [],
+  "commits": [],
+  "issues": [
+    {
+      "login": "randomuser",
+      "author_association": "NONE",
+      "created_at": "2026-10-02T00:00:00+00:00",
+      "closed_at": "2026-10-09T00:00:00+00:00",
+      "state_reason": "completed",
+      "maintainer_reply_h": 6.0
+    },
+    {
+      "login": "another",
+      "author_association": "NONE",
+      "created_at": "2026-09-21T00:00:00+00:00",
+      "closed_at": "2026-09-23T00:00:00+00:00",
+      "state_reason": "not_planned",
+      "maintainer_reply_h": 30.0
+    }
+  ],
+  "stargazers": [],
+  "forks": [],
+  "scope": {}
+}

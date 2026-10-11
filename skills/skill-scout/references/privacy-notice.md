@@ -1,0 +1,1 @@
+Skill Scout uses your own model to check skills. To make answers faster for everyone, it shares what it learns about public skills — what a skill does, claim checks, and test results — with a public cache. It never shares your keys, code, or files. Your task description stays private unless you turn on query sharing.

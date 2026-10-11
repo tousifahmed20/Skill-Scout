@@ -1,0 +1,59 @@
+{
+  "note": "Starting values. Change only after re-running the golden set (stage 01 data). Log every change in PROGRESS.md.",
+  "retrieval": {
+    "evaluate_top": 6,
+    "gem_reserve": 2,
+    "max_evaluations_per_query": 5
+  },
+  "points": {
+    "hard": {
+      "behavioral_delta": 25,
+      "claims_evidence": 20,
+      "independent_reports": 12,
+      "substantive_commits": 8
+    },
+    "medium": {
+      "contributor_independence": 7,
+      "example_realism": 8,
+      "instruction_specificity": 7
+    },
+    "soft": {
+      "star_velocity_quality": 5,
+      "installs": 5,
+      "forks_releases_license": 3
+    }
+  },
+  "credibility": {
+    "core_weight": 3,
+    "minor_weight": 1,
+    "penalty_per_unsupported_core": 0.15,
+    "neutral_if_no_verifiable_claims": 0.5
+  },
+  "floor": {
+    "min_credibility": 0.5,
+    "max_unsupported_core": 1,
+    "drop_verdicts": [
+      "worse"
+    ]
+  },
+  "repo_scope_factor": 0.5,
+  "flags": {
+    "unproven_gap_percentile": 40
+  },
+  "gem": {
+    "graduate_age_days": 60,
+    "graduate_outcome_reports": 10,
+    "min_gem_score": 0.6,
+    "points": {
+      "instruction_specificity": 25,
+      "claims_to_substance": 25,
+      "structural_seriousness": 20,
+      "author_track_record": 15,
+      "early_organic_traction": 15
+    }
+  },
+  "famous": {
+    "min_age_days": 60,
+    "refresh_days": 7
+  }
+}

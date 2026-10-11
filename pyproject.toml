@@ -1,0 +1,19 @@
+[project]
+name = "skill-scout"
+version = "0.1.0"
+description = "Cross-harness Agent Skill that recommends the best existing agent skills for a task."
+requires-python = ">=3.11"
+# urllib/sqlite3/hashlib are stdlib. PyYAML is the only runtime dep (server/dev
+# code only; the shipped skill scripts stay stdlib-only per CLAUDE.md).
+dependencies = ["pyyaml>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+# Embeddings run only in the GitHub Actions build (stage 05); the shipped skill
+# never embeds. Installed in CI, not by users.
+embed = ["sentence-transformers>=3"]
+# Seeding evaluations (stage 06) runs only on the owner's machine, never in CI.
+seed = ["anthropic>=0.40"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

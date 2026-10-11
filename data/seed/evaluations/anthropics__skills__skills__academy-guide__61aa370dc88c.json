@@ -1,0 +1,38 @@
+{
+  "candidate_id": "anthropics/skills@skills/academy-guide",
+  "content_hash": "61aa370dc88ccef0a3fb0516bc5e025c3ce17627cfa8ee31d84e10d16941d991",
+  "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "evaluator_model": "claude-opus-4-8",
+  "actually_does": "After the agent answers a question about using Claude or a Claude product, this skill has it check the Claude Academy catalog (published as JSON at academy.claude.com) for a strong intent match and, only then, append at most two recommendations using URLs copied verbatim from that catalog. It embeds no catalog itself, fetches the JSON once per conversation, and falls back to fixed product-hub or resources-library links when it cannot fetch or finds no strong match. Most of the file is rules constraining when to recommend and forbidding invented content.",
+  "capabilities": [
+    "recommend matching Claude Academy courses and tutorials",
+    "match on user learning intent, not just topic",
+    "fetch and read the Academy catalog JSON",
+    "copy item URLs verbatim under academy.claude.com",
+    "stay silent on weak or tangential matches",
+    "fall back to product hubs when no catalog is available"
+  ],
+  "claims": [
+    {"claim": "recommends matching courses, tutorials, and use cases from Claude Academy",
+     "source": "description", "importance": "core", "verdict": "supported", "evidence": "SKILL.md:25"},
+    {"claim": "never invents Academy content",
+     "source": "skill_md", "importance": "core", "verdict": "supported", "evidence": "SKILL.md:72"},
+    {"claim": "recommends at most two items, one usually best",
+     "source": "skill_md", "importance": "minor", "verdict": "supported", "evidence": "SKILL.md:84"},
+    {"claim": "composes with other skills by adding an Academy pick after a docs-grounded answer",
+     "source": "description", "importance": "minor", "verdict": "unverifiable", "evidence": "SKILL.md:13"}
+  ],
+  "features": ["intent-match gate", "stale-catalog handling", "no-fetch fallback to hubs"],
+  "limitations": [
+    {"text": "Needs the agent to fetch a live URL; with no fetch it can only offer generic hub links, not specific items", "evidence": "SKILL.md:134"},
+    {"text": "Recommends only what is in the external catalog JSON; embeds no content, so value depends on that feed", "evidence": "SKILL.md:121"}
+  ],
+  "issue_resolution": {"threads_read": 0, "confirmed_fixed": 0, "closed_unresolved": 0},
+  "instruction_specificity": 0.9,
+  "example_realism": 0.3,
+  "hype_score": 0.1,
+  "core_depends_on": [],
+  "injection_detected": false,
+  "injection_detail": "",
+  "evaluator_confidence": 0.8
+}

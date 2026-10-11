@@ -1,0 +1,70 @@
+name: build-index
+
+# Full pipeline + free publishing (stage 09). Runs each module in stage order,
+# compresses the pipeline DB, and publishes it as the release asset named in
+# CLAUDE.md. $0/month: GitHub Actions on a public repo + GitHub Releases.
+on:
+  schedule:
+    - cron: "23 6 * * 1"          # weekly full build (Mon); daily collection is collect.yml
+  workflow_dispatch: {}
+
+permissions:
+  contents: write                 # create releases + commit the activity stamp
+
+concurrency:
+  group: build-index
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      AF_GITHUB_TOKEN: ${{ secrets.AF_GITHUB_TOKEN }}
+      AF_SAFETY_SCANNER: ${{ vars.AF_SAFETY_SCANNER }}
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build deps (not shipped to users)
+        run: pip install pyyaml "sentence-transformers>=3"
+
+      - name: Run the pipeline in stage order
+        run: |
+          set -e
+          python -m src.collector --full
+          python -m src.compatibility
+          python -m src.health
+          python -m src.clustering          # embeds + clusters + builds the search index
+          python -m src.evaluation          # imports committed seed evaluations (no LLM)
+          python -m src.ranking gem
+          python -m src.ranking famous
+
+      - name: Compress the index
+        run: gzip -c data/index/skill-scout.sqlite > index.sqlite.gz
+
+      - name: Publish the release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          TAG="index-$(date -u +%Y%m%d-%H%M)"
+          gh release create "$TAG" index.sqlite.gz \
+            --title "Index $(date -u +%Y-%m-%d)" \
+            --notes "Automated index build. Latest asset: index.sqlite.gz"
+          # keep only the 7 most recent index-* releases
+          gh release list --limit 100 --json tagName,createdAt \
+            --jq '[.[] | select(.tagName|startswith("index-"))] | sort_by(.createdAt) | reverse | .[7:] | .[].tagName' \
+            | while read -r old; do [ -n "$old" ] && gh release delete "$old" --yes --cleanup-tag; done
+
+      - name: Weekly activity stamp (keeps scheduled runs alive past 60 days)
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ build $GITHUB_RUN_ID" > data/index/last-build.txt
+          git config user.name "skill-scout-bot"
+          git config user.email "noreply@github.com"
+          git add -f data/index/last-build.txt
+          git commit -m "chore: index build stamp [skip ci]" || echo "nothing to commit"
+          git push || echo "push skipped"

@@ -1,0 +1,230 @@
+{
+  "candidate_id": "o/r@star-burst",
+  "content_hash": "h",
+  "fetched_at": "2026-10-11T00:00:00+00:00",
+  "author": "owner",
+  "is_collection": false,
+  "first_seen": "2024-01-01",
+  "repo_meta": {
+    "stars": 25,
+    "forks": 0,
+    "archived": false,
+    "license": "mit",
+    "pushed_at": "2026-10-08T00:00:00+00:00",
+    "releases": 1,
+    "last_commit": "2026-10-08T00:00:00+00:00"
+  },
+  "author_account": {
+    "created_at": "2019-01-01",
+    "public_repos": 20,
+    "id": 1000000,
+    "type": "User"
+  },
+  "contributors": [],
+  "commits": [],
+  "issues": [],
+  "stargazers": [
+    {
+      "login": "sb0",
+      "id": 200000000,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb1",
+      "id": 200000001,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb2",
+      "id": 200000002,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb3",
+      "id": 200000003,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb4",
+      "id": 200000004,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb5",
+      "id": 200000005,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb6",
+      "id": 200000006,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb7",
+      "id": 200000007,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb8",
+      "id": 200000008,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb9",
+      "id": 200000009,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb10",
+      "id": 200000010,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb11",
+      "id": 200000011,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb12",
+      "id": 200000012,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb13",
+      "id": 200000013,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb14",
+      "id": 200000014,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb15",
+      "id": 200000015,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb16",
+      "id": 200000016,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb17",
+      "id": 200000017,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb18",
+      "id": 200000018,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb19",
+      "id": 200000019,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb20",
+      "id": 200000020,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb21",
+      "id": 200000021,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb22",
+      "id": 200000022,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb23",
+      "id": 200000023,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    },
+    {
+      "login": "sb24",
+      "id": 200000024,
+      "type": "User",
+      "starred_at": "2026-10-10T12:00:00+00:00",
+      "created_at": "2026-10-01T00:00:00+00:00",
+      "public_repos": 0
+    }
+  ],
+  "forks": [],
+  "scope": {}
+}

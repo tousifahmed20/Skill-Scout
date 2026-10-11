@@ -1,0 +1,23 @@
+# secrets
+.env
+*.env
+# python / node
+__pycache__/
+.venv/
+venv/
+node_modules/
+# local data
+data/cache/
+*.sqlite
+*.db
+# runtime scratch from the skill
+task.json
+shortlist.json
+fits.json
+ranked.json
+eval-*.json
+verify-*.json
+evidence.txt
+# os
+.DS_Store
+Thumbs.db

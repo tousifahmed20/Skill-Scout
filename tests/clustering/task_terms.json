@@ -1,0 +1,69 @@
+{
+ "_note": "Model-written search_terms + capabilities for each golden task, derived from the task SENTENCE only (not from the target skills). Used by the recall Done-when. Keyed by task text.",
+ "terms": {
+  "Design a distinctive landing page for my indie coffee subscription startup.": {
+   "search_terms": "landing page web page frontend UI distinctive marketing site hero layout branding visual design build",
+   "capabilities": "design and build a visually distinctive landing page or marketing website frontend"
+  },
+  "I have screenshots of an app I like — extract its design system so my new UI matches it.": {
+   "search_terms": "extract design system from screenshots UI tokens colors typography spacing components style guide replicate match app",
+   "capabilities": "analyze screenshots and extract a reusable design system of colors typography and components"
+  },
+  "Turn my markdown notes into a polished PDF report for printing.": {
+   "search_terms": "convert markdown notes to PDF document report printing generate export file",
+   "capabilities": "create or generate a polished PDF document from markdown or text"
+  },
+  "Create a Word document of our contract with a table of contents and numbered headings.": {
+   "search_terms": "create Word document docx office contract table of contents numbered headings generate format",
+   "capabilities": "create and format a Microsoft Word docx document with headings and a table of contents"
+  },
+  "Clean up this messy sales spreadsheet and add formulas for monthly totals.": {
+   "search_terms": "clean messy spreadsheet excel xlsx sheet formulas monthly totals sales data rows columns calculate",
+   "capabilities": "edit and clean an Excel spreadsheet and add formulas to compute totals"
+  },
+  "Review my dashboard's charts and tell me whether I'm visualizing this data correctly.": {
+   "search_terms": "review dashboard charts data visualization graphs plotting visualize correctly chart choice best practices",
+   "capabilities": "critique data visualizations and advise whether charts are the correct choice"
+  },
+  "Review this GitHub pull request for correctness and safety before I merge it.": {
+   "search_terms": "review github pull request PR code correctness safety merge diff changes feedback approve",
+   "capabilities": "review a GitHub pull request for correctness and safety before merging"
+  },
+  "Do a full code-quality and security audit of my repo and flag technical debt.": {
+   "search_terms": "code quality security audit repository repo technical debt static analysis review flag issues codebase",
+   "capabilities": "audit a codebase for code quality security and technical debt"
+  },
+  "Write tests first for the new feature I'm about to build.": {
+   "search_terms": "write tests first test driven development TDD unit tests feature red green refactor testing",
+   "capabilities": "practice test-driven development writing tests before the implementation"
+  },
+  "Verify my local web app's signup flow works end to end in a real browser.": {
+   "search_terms": "test web app signup flow end to end browser automation verify integration playwright selenium webapp",
+   "capabilities": "test a web application end to end in a real browser"
+  },
+  "Research the market for AI note-taking apps and write me a sourced report.": {
+   "search_terms": "research market analysis sourced report sources deep research investigate web search gather write",
+   "capabilities": "conduct deep research and produce a sourced report"
+  },
+  "Analyze my top competitor's open-source repo and compare it to our product.": {
+   "search_terms": "competitor analysis compare product open source repository benchmark research rival market",
+   "capabilities": "analyze competitors and compare products and repositories"
+  },
+  "Review my Terraform plan for safety before I apply it to production.": {
+   "search_terms": "terraform plan review infrastructure as code IaC safety apply production deployment validate",
+   "capabilities": "review a Terraform or infrastructure-as-code plan for safety before apply"
+  },
+  "I think I lost some commits after a messy rebase — can I recover them?": {
+   "search_terms": "recover lost commits git rebase reflog restore undo safety version control history",
+   "capabilities": "recover lost git commits and undo version-control mistakes safely"
+  },
+  "Summarize this YouTube video and pull out the key quotes.": {
+   "search_terms": "summarize youtube video transcript key quotes captions subtitles extract summary",
+   "capabilities": "fetch a YouTube transcript and summarize the video with key quotes"
+  },
+  "Download this YouTube video in the best available quality.": {
+   "search_terms": "download youtube video best quality save mp4 downloader fetch",
+   "capabilities": "download a YouTube video at the best available quality"
+  }
+ }
+}

@@ -1,0 +1,228 @@
+{
+  "checked_on": "2026-10-11",
+  "sources": {
+    "paths_and_feature_support": "https://github.com/vercel-labs/skills (README: supported agents table and feature notes)",
+    "spec_fields": "https://agentskills.io/specification",
+    "claude_code_extensions": "https://code.claude.com/docs/en/skills",
+    "mcp_and_runners": "verified 2026-10-11 against vendor docs/changelogs: Codex (codex exec; mcp_servers in config.toml), Gemini CLI (settings.json MCP; gemini -p), Antigravity (mcp_config.json serverUrl; headless `agy -p` per antigravity.google/docs/cli/headless), Cursor (cursor-agent -p; .cursor/mcp.json; agent mcp), GitHub Copilot CLI (copilot -p; built-in + custom MCP), Cline (cline_mcp_settings.json; CLI 2.0 headless `cline -y` per docs.cline.bot/cline-cli), Kiro CLI (~/.kiro/settings/mcp.json; 2.0 headless `kiro-cli chat --no-interactive` with KIRO_API_KEY per kiro.dev/docs/cli/headless). All 8 verification_runners now confirmed (stage 07)."
+  },
+  "default_display": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "antigravity",
+    "cursor",
+    "github-copilot"
+  ],
+  "harnesses": [
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "install_agent_flag": "claude-code",
+      "skill_paths": {
+        "project": ".claude/skills/",
+        "global": "~/.claude/skills/"
+      },
+      "supports": {
+        "agent_skills": true,
+        "allowed_tools": true,
+        "claude_code_extensions": true,
+        "context_fork": true,
+        "hooks": true,
+        "body_injection": true,
+        "argument_substitution": true,
+        "mcp": true,
+        "shell": true
+      },
+      "verification_runner": "subagent or `claude -p`",
+      "detect_env": {
+        "CLAUDECODE": "1"
+      },
+      "tool_lexicon": [
+        "TodoWrite",
+        "AskUserQuestion",
+        "ExitPlanMode",
+        "NotebookEdit",
+        "Task tool"
+      ],
+      "unverified": []
+    },
+    {
+      "id": "codex",
+      "name": "OpenAI Codex",
+      "install_agent_flag": "codex",
+      "skill_paths": {
+        "project": ".agents/skills/",
+        "global": "~/.agents/skills/"
+      },
+      "supports": {
+        "agent_skills": true,
+        "allowed_tools": true,
+        "claude_code_extensions": false,
+        "context_fork": false,
+        "hooks": false,
+        "body_injection": false,
+        "argument_substitution": false,
+        "mcp": true,
+        "shell": true
+      },
+      "verification_runner": "`codex exec`",
+      "detect_env": null,
+      "tool_lexicon": [
+        "apply_patch",
+        "update_plan"
+      ],
+      "unverified": []
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "install_agent_flag": "gemini-cli",
+      "skill_paths": {
+        "project": ".agents/skills/",
+        "global": "~/.gemini/skills/"
+      },
+      "supports": {
+        "agent_skills": true,
+        "allowed_tools": true,
+        "claude_code_extensions": false,
+        "context_fork": false,
+        "hooks": false,
+        "body_injection": false,
+        "argument_substitution": false,
+        "mcp": true,
+        "shell": true
+      },
+      "verification_runner": "`gemini -p`",
+      "detect_env": null,
+      "tool_lexicon": [
+        "save_memory",
+        "google_web_search"
+      ],
+      "unverified": []
+    },
+    {
+      "id": "antigravity",
+      "name": "Google Antigravity",
+      "install_agent_flag": "antigravity",
+      "skill_paths": {
+        "project": ".agents/skills/",
+        "global": "~/.gemini/antigravity/skills/"
+      },
+      "supports": {
+        "agent_skills": true,
+        "allowed_tools": true,
+        "claude_code_extensions": false,
+        "context_fork": false,
+        "hooks": false,
+        "body_injection": false,
+        "argument_substitution": false,
+        "mcp": true,
+        "shell": true
+      },
+      "verification_runner": "`agy -p`",
+      "detect_env": null,
+      "tool_lexicon": [],
+      "unverified": [],
+      "notes": "Agent Manager IDE; MCP via mcp_config.json (serverUrl key). Headless/print mode: `agy -p \"<task>\"` (antigravity.google/docs/cli/headless). On a remote/unattended host the first run needs a one-time browser auth."
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "install_agent_flag": "cursor",
+      "skill_paths": {
+        "project": ".agents/skills/",
+        "global": "~/.cursor/skills/"
+      },
+      "supports": {
+        "agent_skills": true,
+        "allowed_tools": true,
+        "claude_code_extensions": false,
+        "context_fork": false,
+        "hooks": false,
+        "body_injection": false,
+        "argument_substitution": false,
+        "mcp": true,
+        "shell": true
+      },
+      "verification_runner": "`cursor-agent -p`",
+      "detect_env": null,
+      "tool_lexicon": [],
+      "unverified": []
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "install_agent_flag": "github-copilot",
+      "skill_paths": {
+        "project": ".agents/skills/",
+        "global": "~/.copilot/skills/"
+      },
+      "supports": {
+        "agent_skills": true,
+        "allowed_tools": true,
+        "claude_code_extensions": false,
+        "context_fork": false,
+        "hooks": false,
+        "body_injection": false,
+        "argument_substitution": false,
+        "mcp": true,
+        "shell": true
+      },
+      "verification_runner": "`copilot -p`",
+      "detect_env": null,
+      "tool_lexicon": [],
+      "unverified": []
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "install_agent_flag": "cline",
+      "skill_paths": {
+        "project": ".agents/skills/",
+        "global": "~/.agents/skills/"
+      },
+      "supports": {
+        "agent_skills": true,
+        "allowed_tools": true,
+        "claude_code_extensions": false,
+        "context_fork": false,
+        "hooks": true,
+        "body_injection": false,
+        "argument_substitution": false,
+        "mcp": true,
+        "shell": true
+      },
+      "verification_runner": "`cline -y`",
+      "detect_env": null,
+      "tool_lexicon": [],
+      "unverified": [],
+      "notes": "VS Code extension; MCP via cline_mcp_settings.json (stdio + HTTP). Cline CLI 2.0 headless: `cline -y \"<task>\"` (also --json / non-TTY stdin) — docs.cline.bot/cline-cli."
+    },
+    {
+      "id": "kiro-cli",
+      "name": "Kiro CLI",
+      "install_agent_flag": "kiro-cli",
+      "skill_paths": {
+        "project": ".kiro/skills/",
+        "global": "~/.kiro/skills/"
+      },
+      "supports": {
+        "agent_skills": true,
+        "allowed_tools": false,
+        "claude_code_extensions": false,
+        "context_fork": false,
+        "hooks": true,
+        "body_injection": false,
+        "argument_substitution": false,
+        "mcp": true,
+        "shell": true
+      },
+      "verification_runner": "`kiro-cli chat --no-interactive`",
+      "detect_env": null,
+      "tool_lexicon": [],
+      "notes": "Custom Kiro agents add a skill:// entry under resources in .kiro/agents/<agent>.json; the default agent loads skills automatically. Kiro CLI 2.0 headless: `kiro-cli chat --no-interactive \"<prompt>\"` with KIRO_API_KEY and --trust-all-tools (kiro.dev/docs/cli/headless); API-key auth needs a paid tier.",
+      "unverified": []
+    }
+  ]
+}

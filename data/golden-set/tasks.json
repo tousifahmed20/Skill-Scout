@@ -1,0 +1,193 @@
+[
+  {
+    "task": "Design a distinctive landing page for my indie coffee subscription startup.",
+    "category": "ui-design",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "anthropics/skills@skills/frontend-design"
+    ],
+    "must_not_rank_first": [
+      "daymade/claude-code-skills@ui-designer",
+      "anthropics/skills@skills/theme-factory"
+    ]
+  },
+  {
+    "task": "I have screenshots of an app I like — extract its design system so my new UI matches it.",
+    "category": "ui-design",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "daymade/claude-code-skills@ui-designer"
+    ],
+    "must_not_rank_first": [
+      "anthropics/skills@skills/theme-factory",
+      "anthropics/skills@skills/canvas-design"
+    ]
+  },
+  {
+    "task": "Turn my markdown notes into a polished PDF report for printing.",
+    "category": "documents",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "daymade/claude-code-skills@daymade-docs/pdf-creator",
+      "anthropics/skills@skills/pdf"
+    ],
+    "must_not_rank_first": [
+      "daymade/claude-code-skills@slides-creator"
+    ]
+  },
+  {
+    "task": "Create a Word document of our contract with a table of contents and numbered headings.",
+    "category": "documents",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "anthropics/skills@skills/docx"
+    ],
+    "must_not_rank_first": [
+      "anthropics/skills@skills/pptx",
+      "daymade/claude-code-skills@slides-creator"
+    ]
+  },
+  {
+    "task": "Clean up this messy sales spreadsheet and add formulas for monthly totals.",
+    "category": "data-analysis",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "anthropics/skills@skills/xlsx"
+    ],
+    "must_not_rank_first": [
+      "daymade/claude-code-skills@product-analysis",
+      "daymade/claude-code-skills@daymade-docs/excel-automation"
+    ]
+  },
+  {
+    "task": "Review my dashboard's charts and tell me whether I'm visualizing this data correctly.",
+    "category": "data-analysis",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "daymade/claude-code-skills@data-visualization-discipline"
+    ],
+    "must_not_rank_first": [
+      "daymade/claude-code-skills@product-analysis",
+      "anthropics/skills@skills/xlsx"
+    ]
+  },
+  {
+    "task": "Review this GitHub pull request for correctness and safety before I merge it.",
+    "category": "code-review",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "daymade/claude-code-skills@github-review-pr"
+    ],
+    "must_not_rank_first": [
+      "mhattingpete/claude-skills-marketplace@productivity-skills-plugin/skills/code-auditor"
+    ]
+  },
+  {
+    "task": "Do a full code-quality and security audit of my repo and flag technical debt.",
+    "category": "code-review",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "mhattingpete/claude-skills-marketplace@productivity-skills-plugin/skills/code-auditor"
+    ],
+    "must_not_rank_first": [
+      "daymade/claude-code-skills@github-review-pr",
+      "obra/superpowers@skills/requesting-code-review"
+    ]
+  },
+  {
+    "task": "Write tests first for the new feature I'm about to build.",
+    "category": "testing",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "obra/superpowers@skills/test-driven-development"
+    ],
+    "must_not_rank_first": [
+      "mhattingpete/claude-skills-marketplace@engineering-workflow-plugin/skills/test-fixing",
+      "daymade/claude-code-skills@promptfoo-evaluation"
+    ]
+  },
+  {
+    "task": "Verify my local web app's signup flow works end to end in a real browser.",
+    "category": "testing",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "anthropics/skills@skills/webapp-testing"
+    ],
+    "must_not_rank_first": [
+      "obra/superpowers@skills/test-driven-development",
+      "mhattingpete/claude-skills-marketplace@engineering-workflow-plugin/skills/test-fixing"
+    ]
+  },
+  {
+    "task": "Research the market for AI note-taking apps and write me a sourced report.",
+    "category": "research",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "daymade/claude-code-skills@deep-research"
+    ],
+    "must_not_rank_first": [
+      "daymade/claude-code-skills@scrapling-skill",
+      "daymade/claude-code-skills@fact-checker"
+    ]
+  },
+  {
+    "task": "Analyze my top competitor's open-source repo and compare it to our product.",
+    "category": "research",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "daymade/claude-code-skills@competitors-analysis"
+    ],
+    "must_not_rank_first": [
+      "daymade/claude-code-skills@deep-research",
+      "daymade/claude-code-skills@scrapling-skill"
+    ]
+  },
+  {
+    "task": "Review my Terraform plan for safety before I apply it to production.",
+    "category": "deployment",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "daymade/claude-code-skills@terraform-skill"
+    ],
+    "must_not_rank_first": [
+      "daymade/claude-code-skills@github-ops",
+      "mhattingpete/claude-skills-marketplace@engineering-workflow-plugin/skills/git-pushing"
+    ]
+  },
+  {
+    "task": "I think I lost some commits after a messy rebase — can I recover them?",
+    "category": "deployment",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "daymade/claude-code-skills@git-safety-net"
+    ],
+    "must_not_rank_first": [
+      "mhattingpete/claude-skills-marketplace@engineering-workflow-plugin/skills/git-pushing",
+      "daymade/claude-code-skills@github-ops"
+    ]
+  },
+  {
+    "task": "Summarize this YouTube video and pull out the key quotes.",
+    "category": "video",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "tubeagentkit/youtube-transcript-skills@skills/youtube-transcript"
+    ],
+    "must_not_rank_first": [
+      "JimmyLv/bibigpt-skill@skills/bibi",
+      "daymade/claude-code-skills@youtube-downloader"
+    ]
+  },
+  {
+    "task": "Download this YouTube video in the best available quality.",
+    "category": "video",
+    "host_harness": "claude-code",
+    "acceptable_picks": [
+      "daymade/claude-code-skills@youtube-downloader"
+    ],
+    "must_not_rank_first": [
+      "tubeagentkit/youtube-transcript-skills@skills/youtube-transcript",
+      "JimmyLv/bibigpt-skill@skills/bibi"
+    ]
+  }
+]

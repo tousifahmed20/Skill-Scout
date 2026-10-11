@@ -1,0 +1,505 @@
+[
+  {
+    "candidate_id": "anthropics/skills@skills/frontend-design",
+    "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "category": "ui-design",
+    "label": "good",
+    "reason": "Specific, opinionated design-lead guidance (ground the design in the subject, deliberate typography/hero choices) that pushes past templated defaults rather than restating generic design tips.",
+    "evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "anthropics/skills@skills/canvas-design",
+    "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "category": "ui-design",
+    "label": "good",
+    "reason": "Two-step philosophy-then-canvas workflow with 82 bundled helper files for producing real .png/.pdf art, well beyond prompt-only advice.",
+    "evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/canvas-design/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "anthropics/skills@skills/theme-factory",
+    "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "category": "ui-design",
+    "label": "good",
+    "reason": "Narrow but concrete: 10 pre-built themes with hex palettes and font pairings plus a showcase.pdf, and a clear apply-to-artifact workflow it actually ships.",
+    "evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/theme-factory/SKILL.md",
+      "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/theme-factory/themes"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@frontend-visual-qa",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "ui-design",
+    "label": "good",
+    "reason": "33 KB of audit profiles (core-visual, responsive, state/journey, native-shell) backed by real Playwright sweeps and 35 reference files; audit-only safety boundary is explicit.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/frontend-visual-qa/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/frontend-visual-qa/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@ui-designer",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "ui-design",
+    "label": "mediocre",
+    "reason": "Reasonable image-to-design-system workflow but mostly orchestrates a general-purpose subagent with three asset prompt-templates, so it is close to a well-written plain prompt.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/ui-designer/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/ui-designer/assets"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "anthropics/skills@skills/pdf",
+    "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "category": "documents",
+    "label": "good",
+    "reason": "Concrete pypdf/pdfplumber recipes for merge/split/extract/forms/OCR with a FORMS.md and REFERENCE.md, and 11 bundled files; does exactly what the broad description claims.",
+    "evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/pdf/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "anthropics/skills@skills/docx",
+    "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "category": "documents",
+    "label": "good",
+    "reason": "Task-routed (create/edit/read) docx-js guidance with hard-won gotchas (DXA widths, shading, numbering) and 60 bundled files.",
+    "evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/docx/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "anthropics/skills@skills/pptx",
+    "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "category": "documents",
+    "label": "good",
+    "reason": "Ships real validated scripts (thumbnail.py, add_slide.py, clean.py, office/validate.py) and a build/edit/read decision table across 55 files.",
+    "evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/pptx/SKILL.md",
+      "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/pptx/scripts"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@daymade-docs/pdf-creator",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "documents",
+    "label": "good",
+    "reason": "Working markdown->print-PDF pipeline with themed CSS, CJK typography and a visual self-check via weasyprint/Chrome backends; 15 bundled files back the commands.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/daymade-docs/pdf-creator/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/daymade-docs/pdf-creator/scripts"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@slides-creator",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "documents",
+    "label": "mediocre",
+    "reason": "A deprecated 966-byte stub (frozen 2026-08-07) whose methodology moved to a private, non-distributed 'deck-creator'; external users get a slide-generator description but no working slide capability.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/slides-creator/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "anthropics/skills@skills/xlsx",
+    "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "category": "data-analysis",
+    "label": "good",
+    "reason": "openpyxl/pandas recipes with a zero-formula-error gate (recalc.py), formula-vs-value read passes and 52 bundled files; cross-platform and substantive.",
+    "evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/xlsx/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@data-visualization-discipline",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "data-analysis",
+    "label": "good",
+    "reason": "A 36 KB chart-judgment layer (mean vs median, aggregation, dual-axis, color count, cross-chart consistency) with a five-checkpoint anti-bloat structure; medium-agnostic and clearly more than prompt advice.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/data-visualization-discipline/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/data-visualization-discipline/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@daymade-financial/bigdata-skill",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "data-analysis",
+    "label": "good",
+    "reason": "Debugged, cost-guarded bigdata-client SDK/REST toolkit that returns the machine-readable fields the Bigdata.com MCP hides; honest about exactly what it adds (12 bundled files).",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/daymade-financial/bigdata-skill/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@daymade-docs/excel-automation",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "data-analysis",
+    "label": "mediocre",
+    "reason": "Specific but narrow and macOS-locked (AppleScript window control); for the common 'clean/compute a spreadsheet' task it overlaps and underperforms the cross-platform xlsx skill.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/daymade-docs/excel-automation/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@product-analysis",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "data-analysis",
+    "label": "hype",
+    "reason": "Frames ordinary subagent fan-out (Explore agents + optional Codex) as 'cross-model test-time compute scaling' with a '100x' claim; the grand framing exceeds what the files actually do.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/product-analysis/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "obra/superpowers@skills/requesting-code-review",
+    "commit_sha": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+    "category": "code-review",
+    "label": "good",
+    "reason": "Concrete protocol for dispatching a reviewer subagent with crafted context (BASE/HEAD SHAs, a code-reviewer.md template) and acting on Critical/Important/Minor feedback.",
+    "evidence": [
+      "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/requesting-code-review/SKILL.md",
+      "https://github.com/obra/superpowers/tree/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/requesting-code-review/code-reviewer.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "obra/superpowers@skills/receiving-code-review",
+    "commit_sha": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+    "category": "code-review",
+    "label": "good",
+    "reason": "A specific 6-step reception protocol (read/understand/verify/evaluate/respond/implement) with forbidden performative responses and source-specific handling, not generic etiquette.",
+    "evidence": [
+      "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/receiving-code-review/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@github-review-pr",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "code-review",
+    "label": "good",
+    "reason": "Rigorous maintainer PR review against the live base using immutable Git objects and three-way merges, with a read-only-by-default mutation boundary; 29 KB plus 4 reference files.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/github-review-pr/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/github-review-pr/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@qa-expert",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "code-review",
+    "label": "good",
+    "reason": "Sets up real QA infrastructure via init_qa_project.py (tracking CSVs, templates, P0-P4 bug taxonomy, OWASP testing) with 8 bundled files; the '100x' phrasing is marketing but the scaffolding is real.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/qa-expert/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/qa-expert/scripts"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "mhattingpete/claude-skills-marketplace@productivity-skills-plugin/skills/code-auditor",
+    "commit_sha": "b5b34bcf4c920bb72cee1c391b54a33cb5353c12",
+    "category": "code-review",
+    "label": "mediocre",
+    "reason": "A generic six-dimension audit checklist (architecture/quality/security/performance/testing/maintainability) with zero bundled scripts or references, so it barely improves on a plain 'audit my code' prompt.",
+    "evidence": [
+      "https://github.com/mhattingpete/claude-skills-marketplace/blob/b5b34bcf4c920bb72cee1c391b54a33cb5353c12/productivity-skills-plugin/skills/code-auditor/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "obra/superpowers@skills/test-driven-development",
+    "commit_sha": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+    "category": "testing",
+    "label": "good",
+    "reason": "Enforces a strict red-green-refactor 'Iron Law' with a verify-the-failure step and anti-rationalization guardrails; a specific discipline rather than a definition of TDD.",
+    "evidence": [
+      "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/test-driven-development/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "anthropics/skills@skills/webapp-testing",
+    "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "category": "testing",
+    "label": "good",
+    "reason": "Playwright toolkit with a with_server.py lifecycle helper and a static-vs-dynamic decision tree, explicitly run as black-box scripts to protect the context window.",
+    "evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/webapp-testing/SKILL.md",
+      "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/webapp-testing/scripts"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "obra/superpowers@skills/verification-before-completion",
+    "commit_sha": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+    "category": "testing",
+    "label": "good",
+    "reason": "A concrete gate function (identify->run->read->verify->claim) with a claim/requires/not-sufficient table that forces fresh evidence before any 'it passes' claim.",
+    "evidence": [
+      "https://github.com/obra/superpowers/blob/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills/verification-before-completion/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@promptfoo-evaluation",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "testing",
+    "label": "good",
+    "reason": "Real promptfooconfig.yaml scaffolding, Python custom assertions and llm-rubric LLM-as-judge setup with concrete config gotchas; does the specific job it names.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/promptfoo-evaluation/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "mhattingpete/claude-skills-marketplace@engineering-workflow-plugin/skills/test-fixing",
+    "commit_sha": "b5b34bcf4c920bb72cee1c391b54a33cb5353c12",
+    "category": "testing",
+    "label": "mediocre",
+    "reason": "Sensible 'run tests, group errors, fix by impact' loop but assumes `make test`, ships no helpers, and reads like a generic prompt a capable model would already follow.",
+    "evidence": [
+      "https://github.com/mhattingpete/claude-skills-marketplace/blob/b5b34bcf4c920bb72cee1c391b54a33cb5353c12/engineering-workflow-plugin/skills/test-fixing/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@deep-research",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "research",
+    "label": "good",
+    "reason": "A full lead-agent/subagent research architecture (claim map, evidence packets, citation registry, counter-review, reopen-the-original discipline) across 22 bundled files.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/deep-research/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/deep-research/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@fact-checker",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "research",
+    "label": "good",
+    "reason": "Concrete claim-identification, authoritative-source search, and correction-with-approval workflow targeting verifiable specs/versions/stats while skipping subjective prose.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/fact-checker/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@competitors-analysis",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "research",
+    "label": "good",
+    "reason": "Clones/updates competitor repos into a durable workspace and cites facts at file:line, separating repository evidence from landscape synthesis; 8 bundled files.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/competitors-analysis/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/competitors-analysis/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@daymade-financial/daymade-sector-research",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "research",
+    "label": "good",
+    "reason": "Substantive A-share sector workflow (Top-N gainers, dual-source announcement cross-check, L1-L3 evidence grading, adversarial verification) but very China-market-niche and disable-model-invocation.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/daymade-financial/daymade-sector-research/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/daymade-financial/daymade-sector-research/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@scrapling-skill",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "research",
+    "label": "mediocre",
+    "reason": "A thin wrapper around one third-party CLI (Scrapling): mostly install-diagnosis and static-vs-dynamic fetch steps, so it is a narrow tool helper rather than a research capability.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/scrapling-skill/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/scrapling-skill/scripts"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@terraform-skill",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "deployment",
+    "label": "good",
+    "reason": "Targets real Terraform release hazards (unvalidated bytes, shared-gateway blast radius, env parity, provisioner symptoms) with task routing into four reference docs; 5 bundled files.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/terraform-skill/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/terraform-skill/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@cloudflare-troubleshooting",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "deployment",
+    "label": "good",
+    "reason": "Evidence-driven Cloudflare API investigation (zone lookup, config readback before diagnosis) layered on a shared network-debugging methodology; 6 bundled files.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/cloudflare-troubleshooting/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/cloudflare-troubleshooting/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@git-safety-net",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "deployment",
+    "label": "good",
+    "reason": "A 66 KB non-destructive-first toolkit for auditing/recovering unpushed commits, stashes and dangling objects with an explicit outcome/authorization contract; 24 bundled files.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/git-safety-net/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/git-safety-net/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@github-ops",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "deployment",
+    "label": "good",
+    "reason": "gh/REST/GraphQL operations with an independent-readback discipline (a 2xx is acceptance, not proof) and reference-routed PR/issue/repo/permission tasks; 12 bundled files.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/github-ops/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/github-ops/references"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "mhattingpete/claude-skills-marketplace@engineering-workflow-plugin/skills/git-pushing",
+    "commit_sha": "b5b34bcf4c920bb72cee1c391b54a33cb5353c12",
+    "category": "deployment",
+    "label": "mediocre",
+    "reason": "A 1 KB stage-commit-push wrapper that just tells the agent to run smart_commit.sh; trivial and adds little over a capable model running git directly.",
+    "evidence": [
+      "https://github.com/mhattingpete/claude-skills-marketplace/blob/b5b34bcf4c920bb72cee1c391b54a33cb5353c12/engineering-workflow-plugin/skills/git-pushing/SKILL.md",
+      "https://github.com/mhattingpete/claude-skills-marketplace/tree/b5b34bcf4c920bb72cee1c391b54a33cb5353c12/engineering-workflow-plugin/skills/git-pushing/scripts"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "tubeagentkit/youtube-transcript-skills@skills/youtube-transcript",
+    "commit_sha": "95677657f5d213bd63ebcd82c01205007fcd2acb",
+    "category": "video",
+    "label": "good",
+    "reason": "Working transcript/search/playlist fetch over a metered REST API with 14 bundled scripts, honest upfront pricing, and a tight outbound-scope statement.",
+    "evidence": [
+      "https://github.com/tubeagentkit/youtube-transcript-skills/blob/95677657f5d213bd63ebcd82c01205007fcd2acb/skills/youtube-transcript/SKILL.md",
+      "https://github.com/tubeagentkit/youtube-transcript-skills/tree/95677657f5d213bd63ebcd82c01205007fcd2acb/skills/youtube-transcript/scripts"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "Lum1104/video-to-skill@.",
+    "commit_sha": "5e9f97e89855a8a0ea998ba85e179fbc1765d4b7",
+    "category": "video",
+    "label": "good",
+    "reason": "Substantive and recent (98 bundled files): converts a video/course into an installed, evidence-grounded teaching skill with a clear user contract and resume/caching behavior.",
+    "evidence": [
+      "https://github.com/Lum1104/video-to-skill/blob/5e9f97e89855a8a0ea998ba85e179fbc1765d4b7/SKILL.md",
+      "https://github.com/Lum1104/video-to-skill/tree/5e9f97e89855a8a0ea998ba85e179fbc1765d4b7/scripts"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "daymade/claude-code-skills@youtube-downloader",
+    "commit_sha": "dc552c95ed8f99acc663db1edeb3401f1c29f113",
+    "category": "video",
+    "label": "good",
+    "reason": "Reliable yt-dlp/ffmpeg workflow (up to 4K, HLS auth headers, bot-check fallback via oEmbed) with a non-technical default UX and 3 bundled scripts.",
+    "evidence": [
+      "https://github.com/daymade/claude-code-skills/blob/dc552c95ed8f99acc663db1edeb3401f1c29f113/youtube-downloader/SKILL.md",
+      "https://github.com/daymade/claude-code-skills/tree/dc552c95ed8f99acc663db1edeb3401f1c29f113/youtube-downloader/scripts"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "anthropics/skills@skills/slack-gif-creator",
+    "commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+    "category": "video",
+    "label": "good",
+    "reason": "Ships a GIFBuilder toolkit plus Slack-specific constraints (dimensions, fps, color budgets) and validation utilities across 6 files.",
+    "evidence": [
+      "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/slack-gif-creator/SKILL.md",
+      "https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/slack-gif-creator/core"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  },
+  {
+    "candidate_id": "JimmyLv/bibigpt-skill@skills/bibi",
+    "commit_sha": "31b328df26fddd11b16af469d8fef793c00affc7",
+    "category": "video",
+    "label": "hype",
+    "reason": "The SKILL.md states outright 'This file is a discovery stub, not the usage guide'; a keyword-stuffed description promises broad multi-platform summarization + 'video to TikTok MV', but real capability lives behind a commercial product.",
+    "evidence": [
+      "https://github.com/JimmyLv/bibigpt-skill/blob/31b328df26fddd11b16af469d8fef793c00affc7/skills/bibi/SKILL.md"
+    ],
+    "harness_tried": [],
+    "labeled_on": "2026-10-11"
+  }
+]

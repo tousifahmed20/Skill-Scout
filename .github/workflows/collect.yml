@@ -1,0 +1,45 @@
+# Collector schedule (stage 02): daily sweep for new/changed skills + weekly
+# full refresh. The owner token lives only here, as the AF_GITHUB_TOKEN secret
+# (sources.md) — never shipped in the skill, index, or logs.
+#
+# NOTE: index persistence/publishing (download the latest GitHub Release index,
+# update it, republish index.sqlite.gz) is wired in stage 09, not here. This
+# workflow proves the scheduled sweep runs; the DB it builds is ephemeral until
+# stage 09 adds the restore/publish steps.
+name: collect
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # daily 04:17 UTC — new/changed skills
+    - cron: "17 5 * * 0"   # Sunday 05:17 UTC — full refresh
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "full refresh"
+        type: boolean
+        default: false
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pyyaml   # the only runtime dep (manifest: pyproject.toml); run via `python -m` from repo root
+      - name: Run sweep
+        env:
+          AF_GITHUB_TOKEN: ${{ secrets.AF_GITHUB_TOKEN }}
+          AF_SAFETY_SCANNER: ${{ vars.AF_SAFETY_SCANNER }}  # unset -> safety status 'skipped'
+        run: |
+          if [ "${{ github.event.schedule }}" = "17 5 * * 0" ] || [ "${{ inputs.full }}" = "true" ]; then
+            python -m src.collector --full
+          else
+            python -m src.collector
+          fi

@@ -1,0 +1,1 @@
+never built locally — the build-index workflow stamps this on each scheduled run
